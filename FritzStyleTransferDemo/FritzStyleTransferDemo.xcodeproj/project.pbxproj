@@ -16,6 +16,9 @@
 		83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CD2149609C00E86B44 /* ShaderUtilities.c */; };
 		83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97D32149610700E86B44 /* VideoPreviewView.swift */; };
 		A7D3C0B1300D396F14FDAB29 /* Pods_FritzStyleTransferDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */; };
+		D4EE1E9D21DA641C00FCC5FB /* Models+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9C21DA641C00FCC5FB /* Models+Fritz.swift */; };
+		D4EE1EA021DA7B8E00FCC5FB /* styleOne.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9E21DA7B8E00FCC5FB /* styleOne.mlmodel */; };
+		D4EE1EA121DA7B8E00FCC5FB /* styleTwo.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9F21DA7B8E00FCC5FB /* styleTwo.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		83AC97D32149610700E86B44 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 		A7D3C2F52479434BCD005E10 /* Pods-FritzStyleTransferDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzStyleTransferDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzStyleTransferDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EE1E9C21DA641C00FCC5FB /* Models+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Fritz.swift"; sourceTree = "<group>"; };
+		D4EE1E9E21DA7B8E00FCC5FB /* styleOne.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = styleOne.mlmodel; sourceTree = "<group>"; };
+		D4EE1E9F21DA7B8E00FCC5FB /* styleTwo.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = styleTwo.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		83AC97B821495DD400E86B44 /* FritzStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D4EE1E9B21DA640000FCC5FB /* Models */,
 				83AC97CB2149609C00E86B44 /* Apple OpenGL Buffer View */,
 				83AC97B921495DD400E86B44 /* AppDelegate.swift */,
 				83AC97D32149610700E86B44 /* VideoPreviewView.swift */,
@@ -109,6 +116,16 @@
 				C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4EE1E9B21DA640000FCC5FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4EE1E9C21DA641C00FCC5FB /* Models+Fritz.swift */,
+				D4EE1E9E21DA7B8E00FCC5FB /* styleOne.mlmodel */,
+				D4EE1E9F21DA7B8E00FCC5FB /* styleTwo.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,16 +223,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModel.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModelPaintings.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModelBase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelPaintings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelBase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,7 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */,
+				D4EE1E9D21DA641C00FCC5FB /* Models+Fritz.swift in Sources */,
 				83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */,
+				D4EE1EA121DA7B8E00FCC5FB /* styleTwo.mlmodel in Sources */,
+				D4EE1EA021DA7B8E00FCC5FB /* styleOne.mlmodel in Sources */,
 				83AC97BC21495DD400E86B44 /* ViewController.swift in Sources */,
 				83AC97BA21495DD400E86B44 /* AppDelegate.swift in Sources */,
 				83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */,
@@ -379,8 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3RGJF7P9D;
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";
@@ -395,8 +426,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3RGJF7P9D;
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";

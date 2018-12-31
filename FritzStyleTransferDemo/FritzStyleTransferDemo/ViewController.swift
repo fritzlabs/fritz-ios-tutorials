@@ -13,7 +13,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     var previewView = VideoPreviewView()
     
-    lazy var styleModel = FritzVisionStyleTypes.starry_night
+    lazy var styleModel = FritzVisionStyleTypes.style_1
     var models = FritzVisionStyleTypes.allCases
     var activeModel: FritzVisionFlexibleStyleModel?
     var activeModelIndex: Int?
