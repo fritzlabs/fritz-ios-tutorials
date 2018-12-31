@@ -19,6 +19,7 @@
 		D4EE1E9D21DA641C00FCC5FB /* Models+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9C21DA641C00FCC5FB /* Models+Fritz.swift */; };
 		D4EE1EA021DA7B8E00FCC5FB /* styleOne.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9E21DA7B8E00FCC5FB /* styleOne.mlmodel */; };
 		D4EE1EA121DA7B8E00FCC5FB /* styleTwo.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D4EE1E9F21DA7B8E00FCC5FB /* styleTwo.mlmodel */; };
+		D4EE1EA321DA7E1F00FCC5FB /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4EE1EA221DA7E1F00FCC5FB /* Fritz-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D4EE1E9C21DA641C00FCC5FB /* Models+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Fritz.swift"; sourceTree = "<group>"; };
 		D4EE1E9E21DA7B8E00FCC5FB /* styleOne.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = styleOne.mlmodel; sourceTree = "<group>"; };
 		D4EE1E9F21DA7B8E00FCC5FB /* styleTwo.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = styleTwo.mlmodel; sourceTree = "<group>"; };
+		D4EE1EA221DA7E1F00FCC5FB /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Fritz-Info.plist"; path = "FritzStyleTransferDemo/Fritz-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		83AC97CB2149609C00E86B44 /* Apple OpenGL Buffer View */ = {
 			isa = PBXGroup;
 			children = (
+				D4EE1EA221DA7E1F00FCC5FB /* Fritz-Info.plist */,
 				83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */,
 				83AC97CD2149609C00E86B44 /* ShaderUtilities.c */,
 				83AC97CE2149609C00E86B44 /* Buffer-View-Bridging-Header.h */,
@@ -190,6 +193,7 @@
 			files = (
 				83AC97C421495DD600E86B44 /* LaunchScreen.storyboard in Resources */,
 				83AC97C121495DD600E86B44 /* Assets.xcassets in Resources */,
+				D4EE1EA321DA7E1F00FCC5FB /* Fritz-Info.plist in Resources */,
 				83AC97BF21495DD400E86B44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

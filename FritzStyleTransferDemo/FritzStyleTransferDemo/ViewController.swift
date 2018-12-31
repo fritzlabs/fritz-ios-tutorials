@@ -13,12 +13,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     var previewView = VideoPreviewView()
     
-    lazy var styleModel = FritzVisionStyleTypes.style_1
+    // Initialize the model carousel. See Models/Models+Fritz.swift for the definition of this data structure.
     var models = FritzVisionStyleTypes.allCases
     var activeModel: FritzVisionFlexibleStyleModel?
     var activeModelIndex: Int?
     
+    // Initalize flexible model options. In this case, we want the model to
+    // create stylized versions of input images at whatever the original size is.
     let modelOptions = FritzVisionFlexibleStyleModelOptions(flexibleModelDimensions: FlexibleModelDimensions.original)
+    
+    // The image size of the capture session. This will also be the output size of the
+    // stylized images. Other values: hd1280x720, hd1920x1080
+    let presetSize = AVCaptureSession.Preset.vga640x480
     
     private lazy var captureSession: AVCaptureSession = {
         let session = AVCaptureSession()
@@ -30,13 +36,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         session.addInput(input)
         
         // The style transfer takes a 640x480 image as input and outputs an image of the same size.
-        session.sessionPreset = AVCaptureSession.Preset.hd1280x720
+        session.sessionPreset = self.presetSize
         return session
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set the active model to the first one
         self.activeModel = models[0].getModel()
         self.activeModelIndex = 0
         
@@ -63,6 +70,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     func activateNextStyle()
     {
+        // Loop if we get back to the begining
         if let modelIndex = self.activeModelIndex, modelIndex == models.count - 1 {
             self.activeModel = models.first!.getModel()
             self.activeModelIndex = 0

@@ -12,7 +12,8 @@ import Fritz
 public enum FritzVisionStyleTypes: CaseIterable {
     case style_1
     case style_2
-    
+    // This data structure ensures that models are only initialized when they are being used.
+    // Otherwise you will run out of memory when including many styles.
     public func getModel() -> FritzVisionFlexibleStyleModel {
         switch (self) {
         case .style_1: return FritzVisionFlexibleStyleModel(model: styleOne())
