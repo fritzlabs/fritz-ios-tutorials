@@ -10,11 +10,73 @@ import UIKit
 import Photos
 import Fritz
 
+public protocol StyleModelTagExample {
+
+    var styleModels: [FritzVisionStyleModel] { get set}
+
+    func load()
+}
+
+
+class InstantiateFromStyleModelClass: StyleModelTagExample {
+    var styleModels: [FritzVisionStyleModel] = []
+
+    func load() {
+        FritzVisionStyleModel.fetchStyleModelsForTags(tags: ["style-transfer", "not-flexible"]) { downloadedModels, error in
+            guard let fritzStyleModels = downloadedModels else {
+                print(String(describing: error))
+                return
+            }
+            self.styleModels = fritzStyleModels
+        }
+    }
+}
+
+class InstantiateFromModelManager: StyleModelTagExample {
+    var styleModels: [FritzVisionStyleModel] = []
+
+    func load() {
+        let managedModel = FritzManagedModel(modelConfig: FritzModelConfiguration(identifier: "16bbb58cca57418993189c54f8642d5f", version: 1))
+        managedModel.fetchModel { fetchedMLModel, error in
+            guard let model = fetchedMLModel else {
+                return
+            }
+            self.styleModels.append(try! FritzVisionStyleModel(model: model))
+        }
+    }
+}
+
+
+class FritzStyleTransferTagManagerExample: StyleModelTagExample {
+    var styleModels: [FritzVisionStyleModel] = []
+
+    func load() {
+        let tagManager = ModelTagManager(tags: ["style-transfer", "not-flexible"])
+        tagManager.fetchManagedModelsForTags { fetchedManagedModels, error in
+            guard let managedModels = fetchedManagedModels else {
+                return
+            }
+            for managedModel in managedModels {
+                managedModel.fetchModel { fetchedMLModel, error in
+                    guard let fritzMLModel = fetchedMLModel else {
+                        return
+                    }
+                    let model = try! FritzVisionStyleModel(model: fritzMLModel)
+                    self.styleModels.append(model)
+                }
+            }
+        }
+    }
+}
+
+
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     var previewView = VideoPreviewView()
 
     lazy var styleModel = FritzVisionStyleModel.starryNight
+
+    let modelsExample: StyleModelTagExample = FritzStyleTransferTagManagerExample()
 
     private lazy var captureSession: AVCaptureSession = {
         let session = AVCaptureSession()
@@ -32,6 +94,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        modelsExample.load()
 
         // Add preview View as a subview
         view.addSubview(previewView)
@@ -58,8 +122,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        if modelsExample.styleModels.count == 0 {
+            print("No models :(")
+            return
+        }
+        let model = modelsExample.styleModels[0]
         let fritzImage = FritzVisionImage(buffer: sampleBuffer)
-        styleModel.predict(fritzImage) { stylizedImage, error in
+        model.predict(fritzImage) { stylizedImage, error in
             guard let stylizedImage = stylizedImage, error == nil else {
                 print("Error encountered running Style Model")
                 return
