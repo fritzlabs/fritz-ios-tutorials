@@ -210,7 +210,6 @@
 				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModelPaintings.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModelBase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -219,7 +218,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelPaintings.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelBase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
