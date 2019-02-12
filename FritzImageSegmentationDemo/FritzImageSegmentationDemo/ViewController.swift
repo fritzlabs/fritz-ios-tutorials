@@ -70,9 +70,8 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         let image = FritzVisionImage(buffer: sampleBuffer)
-        let options = FritzVisionSegmentationModelOptions(cropAndScaleOption: .scaleFit)
 
-        visionModel.predict(image, options: options) { [weak self] (mask, error) in
+        visionModel.predict(image) { [weak self] (mask, error) in
             guard let mask = mask, let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)  else { return }
 
             DispatchQueue.main.async {
