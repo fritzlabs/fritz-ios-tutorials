@@ -11,7 +11,7 @@ import Fritz
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    var previewView = VideoPreviewView()
+    var previewView: UIImageView!
     
     // Initialize the model carousel. See Models/Models+Fritz.swift for the definition of this data structure.
     var models = FritzVisionStyleTypes.allCases
@@ -20,8 +20,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     // Initalize flexible model options. In this case, we want the model to
     // create stylized versions of input images at whatever the original size is.
-    let modelOptions = FritzVisionFlexibleStyleModelOptions(flexibleModelDimensions: FlexibleModelDimensions.original)
-    
+    lazy var modelOptions: FritzVisionFlexibleStyleModelOptions = {
+        let options = FritzVisionFlexibleStyleModelOptions()
+        options.flexibleModelDimensions = .original
+        return options
+    }()
+
     // The image size of the capture session. This will also be the output size of the
     // stylized images. Other values: hd1280x720, hd1920x1080
     let presetSize = AVCaptureSession.Preset.vga640x480
@@ -46,7 +50,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Set the active model to the first one
         self.activeModel = models[0].getModel()
         self.activeModelIndex = 0
-        
+
+        previewView = UIImageView(frame: view.frame)
+        previewView.contentMode = .scaleAspectFit
         // Add preview View as a subview
         view.addSubview(previewView)
         
@@ -103,8 +109,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 print("Error encountered running Style Model")
                 return
             }
+
+            let image = UIImage(pixelBuffer: stylizedImage)
             DispatchQueue.main.async {
-                self.previewView.display(buffer: stylizedImage)
+                self.previewView.image = image
             }
         }
     }
