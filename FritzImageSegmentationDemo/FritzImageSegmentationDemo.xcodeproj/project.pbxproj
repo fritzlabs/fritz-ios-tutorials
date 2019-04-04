@@ -254,6 +254,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/Fritz.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
@@ -264,6 +265,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
