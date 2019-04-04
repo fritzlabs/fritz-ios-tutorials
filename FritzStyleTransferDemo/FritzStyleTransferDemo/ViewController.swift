@@ -12,63 +12,67 @@ import Fritz
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
-    var previewView = VideoPreviewView()
+  var previewView: UIImageView!
 
-    lazy var styleModel = FritzVisionStyleModel.starryNight
+  lazy var styleModel = FritzVisionStyleModel.starryNight
 
-    private lazy var captureSession: AVCaptureSession = {
-        let session = AVCaptureSession()
+  private lazy var captureSession: AVCaptureSession = {
+    let session = AVCaptureSession()
 
-        guard
-            let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
-            let input = try? AVCaptureDeviceInput(device: backCamera)
-            else { return session }
-        session.addInput(input)
+    guard
+      let backCamera = AVCaptureDevice.default(
+        .builtInWideAngleCamera,
+        for: .video,
+        position: .back),
+      let input = try? AVCaptureDeviceInput(device: backCamera)
+      else { return session }
+    session.addInput(input)
 
-        // The style transfer takes a 640x480 image as input and outputs an image of the same size.
-        session.sessionPreset = AVCaptureSession.Preset.vga640x480
-        return session
-    }()
+    // The style transfer takes a 640x480 image as input and outputs an image of the same size.
+    session.sessionPreset = AVCaptureSession.Preset.vga640x480
+    return session
+  }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        // Add preview View as a subview
-        view.addSubview(previewView)
+    // Add preview View as a subview
+    previewView = UIImageView(frame: view.bounds)
+    previewView.contentMode = .scaleAspectFill
+    view.addSubview(previewView)
 
-        let videoOutput = AVCaptureVideoDataOutput()
-        // Necessary video settings for displaying pixels using the VideoPreviewView
-        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA as UInt32]
-        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
-        self.captureSession.addOutput(videoOutput)
-        self.captureSession.startRunning()
+    let videoOutput = AVCaptureVideoDataOutput()
+    // Necessary video settings for displaying pixels using the VideoPreviewView
+    videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA as UInt32]
+    videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
+    self.captureSession.addOutput(videoOutput)
+    self.captureSession.startRunning()
 
-        videoOutput.connection(with: .video)?.videoOrientation = .portrait
+    videoOutput.connection(with: .video)?.videoOrientation = .portrait
+  }
+
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+
+    previewView.frame = view.bounds
+  }
+
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
+  func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    let fritzImage = FritzVisionImage(buffer: sampleBuffer)
+    styleModel.predict(fritzImage) { stylizedImage, error in
+      guard let stylizedImage = stylizedImage, error == nil else {
+        print("Error encountered running Style Model")
+        return
+      }
+      let styled = UIImage(pixelBuffer: stylizedImage)
+      DispatchQueue.main.async {
+        self.previewView.image = styled
+      }
     }
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-
-        previewView.frame = view.bounds
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        let fritzImage = FritzVisionImage(buffer: sampleBuffer)
-        styleModel.predict(fritzImage) { stylizedImage, error in
-            guard let stylizedImage = stylizedImage, error == nil else {
-                print("Error encountered running Style Model")
-                return
-            }
-            DispatchQueue.main.async {
-                self.previewView.display(buffer: stylizedImage)
-            }
-        }
-    }
-
+  }
 }
-
