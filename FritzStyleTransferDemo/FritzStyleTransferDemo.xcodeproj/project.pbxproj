@@ -12,9 +12,6 @@
 		83AC97BF21495DD400E86B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AC97BD21495DD400E86B44 /* Main.storyboard */; };
 		83AC97C121495DD600E86B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AC97C021495DD600E86B44 /* Assets.xcassets */; };
 		83AC97C421495DD600E86B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AC97C221495DD600E86B44 /* LaunchScreen.storyboard */; };
-		83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */; };
-		83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CD2149609C00E86B44 /* ShaderUtilities.c */; };
-		83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97D32149610700E86B44 /* VideoPreviewView.swift */; };
 		A7D3C0B1300D396F14FDAB29 /* Pods_FritzStyleTransferDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,12 +24,6 @@
 		83AC97C021495DD600E86B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83AC97C321495DD600E86B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83AC97C521495DD600E86B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLPixelBufferView.m; sourceTree = "<group>"; };
-		83AC97CD2149609C00E86B44 /* ShaderUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ShaderUtilities.c; sourceTree = "<group>"; };
-		83AC97CE2149609C00E86B44 /* Buffer-View-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Buffer-View-Bridging-Header.h"; sourceTree = "<group>"; };
-		83AC97CF2149609C00E86B44 /* OpenGLPixelBufferView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLPixelBufferView.h; sourceTree = "<group>"; };
-		83AC97D02149609C00E86B44 /* ShaderUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtilities.h; sourceTree = "<group>"; };
-		83AC97D32149610700E86B44 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 		A7D3C2F52479434BCD005E10 /* Pods-FritzStyleTransferDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzStyleTransferDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzStyleTransferDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,9 +70,7 @@
 		83AC97B821495DD400E86B44 /* FritzStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
-				83AC97CB2149609C00E86B44 /* Apple OpenGL Buffer View */,
 				83AC97B921495DD400E86B44 /* AppDelegate.swift */,
-				83AC97D32149610700E86B44 /* VideoPreviewView.swift */,
 				83AC97BB21495DD400E86B44 /* ViewController.swift */,
 				83AC97BD21495DD400E86B44 /* Main.storyboard */,
 				83AC97C021495DD600E86B44 /* Assets.xcassets */,
@@ -89,18 +78,6 @@
 				83AC97C521495DD600E86B44 /* Info.plist */,
 			);
 			path = FritzStyleTransferDemo;
-			sourceTree = "<group>";
-		};
-		83AC97CB2149609C00E86B44 /* Apple OpenGL Buffer View */ = {
-			isa = PBXGroup;
-			children = (
-				83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */,
-				83AC97CD2149609C00E86B44 /* ShaderUtilities.c */,
-				83AC97CE2149609C00E86B44 /* Buffer-View-Bridging-Header.h */,
-				83AC97CF2149609C00E86B44 /* OpenGLPixelBufferView.h */,
-				83AC97D02149609C00E86B44 /* ShaderUtilities.h */,
-			);
-			path = "Apple OpenGL Buffer View";
 			sourceTree = "<group>";
 		};
 		BB943EB300172DC593FAF437 /* Frameworks */ = {
@@ -206,6 +183,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/Fritz.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
@@ -214,6 +192,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
@@ -231,11 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */,
-				83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */,
 				83AC97BC21495DD400E86B44 /* ViewController.swift in Sources */,
 				83AC97BA21495DD400E86B44 /* AppDelegate.swift in Sources */,
-				83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +365,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,7 +384,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

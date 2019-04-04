@@ -1,20 +1,19 @@
 PODS:
-  - Fritz (3.0.0):
-    - Fritz/ManagedModel (= 3.0.0)
-  - Fritz/Core (3.0.0)
-  - Fritz/CoreMLHelpers (3.0.0)
-  - Fritz/ManagedModel (3.0.0):
+  - Fritz (3.2.0):
+    - Fritz/ManagedModel (= 3.2.0)
+  - Fritz/Core (3.2.0)
+  - Fritz/CoreMLHelpers (3.2.0)
+  - Fritz/ManagedModel (3.2.0):
     - Fritz/Core
-  - Fritz/Vision (3.0.0):
+  - Fritz/Vision (3.2.0):
     - Fritz/Core
     - Fritz/CoreMLHelpers
     - Fritz/ManagedModel
-  - Fritz/VisionStyleModel/Paintings (3.0.0):
-    - Fritz/ManagedModel
+  - Fritz/VisionStyleModel/Paintings (3.2.0):
     - Fritz/Vision
 
 DEPENDENCIES:
-  - Fritz (~> 3.0.0)
+  - Fritz (~> 3.2.0)
   - Fritz/VisionStyleModel/Paintings
 
 SPEC REPOS:
@@ -22,8 +21,8 @@ SPEC REPOS:
     - Fritz
 
 SPEC CHECKSUMS:
-  Fritz: dd09b8350005a0b2148cd4c143bed5b636e169fd
+  Fritz: b582c55d6d4f823dfb87cafc7823d3b8067dad37
 
-PODFILE CHECKSUM: 4724c86efca4c4ab26961fa3a94c9c6ad5801fa3
+PODFILE CHECKSUM: 632ec7848ea4927cd290e3871843dc5cba2a27b5
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.6.1
