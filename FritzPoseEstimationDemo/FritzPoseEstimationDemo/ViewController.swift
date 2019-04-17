@@ -14,7 +14,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
   var previewView: UIImageView!
 
-  lazy var styleModel = FritzVisionStyleModel.starryNight
+  lazy var poseModel = FritzVisionPoseModel()
+
+  lazy var poseSmoother = PoseSmoother<OneEuroPointFilter>()
 
   private lazy var captureSession: AVCaptureSession = {
     let session = AVCaptureSession()
@@ -42,7 +44,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     view.addSubview(previewView)
 
     let videoOutput = AVCaptureVideoDataOutput()
-    // Necessary video settings for displaying pixels using the VideoPreviewView
     videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA as UInt32]
     videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
     self.captureSession.addOutput(videoOutput)
@@ -62,13 +63,48 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // Dispose of any resources that can be recreated.
   }
 
+  func displayInputImage(_ sampleBuffer: CMSampleBuffer) {
+    guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+    let image = UIImage(pixelBuffer: pixelBuffer)
+    DispatchQueue.main.async {
+      self.previewView.image = image
+    }
+  }
+
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+
     let fritzImage = FritzVisionImage(buffer: sampleBuffer)
-    guard let stylizedImage = try? styleModel.predict(fritzImage) else { return }
-      let styled = UIImage(pixelBuffer: stylizedImage)
-      DispatchQueue.main.async {
-        self.previewView.image = styled
-      }
+
+    let options = FritzVisionPoseModelOptions()
+    options.minPoseThreshold = 0.4
+
+    guard let result = try? poseModel.predict(fritzImage, options: options) else {
+      // If there was no pose, display original image
+      displayInputImage(sampleBuffer)
+      return
+    }
+
+    guard var pose = result.decodePose() else {
+      displayInputImage(sampleBuffer)
+      return
+    }
+
+    // Uncomment to use pose smoothing to smoothe output of model.
+    // Will increase lag of pose a bit.
+    // pose = poseSmoother.smoothe(pose)
+
+    guard let poseResult = result.drawPose(pose) else {
+      displayInputImage(sampleBuffer)
+      return
+    }
+
+    // if let smoothed = result.drawPose() {
+
+    DispatchQueue.main.async {
+      self.previewView.image = poseResult
+    }
+
+
 
   }
 }

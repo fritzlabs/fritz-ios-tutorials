@@ -7,128 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */; };
-		830D47BD216CF3530003DE84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BC216CF3530003DE84 /* AppDelegate.swift */; };
-		830D47BF216CF3530003DE84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BE216CF3530003DE84 /* ViewController.swift */; };
-		830D47C2216CF3530003DE84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C0216CF3530003DE84 /* Main.storyboard */; };
-		830D47C4216CF3530003DE84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C3216CF3530003DE84 /* Assets.xcassets */; };
-		830D47C7216CF3530003DE84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */; };
-		83446F40216D727600B87ED3 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83446F3F216D727600B87ED3 /* CustomBlurView.swift */; };
+		637B793E6509269EA5E3D67A /* Pods_FritzPoseEstimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BF593862E7424228318F02 /* Pods_FritzPoseEstimationDemo.framework */; };
+		835093982266E79700A81041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835093972266E79700A81041 /* AppDelegate.swift */; };
+		8350939A2266E79700A81041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835093992266E79700A81041 /* ViewController.swift */; };
+		8350939D2266E79700A81041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8350939B2266E79700A81041 /* Main.storyboard */; };
+		8350939F2266E79A00A81041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8350939E2266E79A00A81041 /* Assets.xcassets */; };
+		835093A22266E79A00A81041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835093A02266E79A00A81041 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzImageSegmentationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		830D47BC216CF3530003DE84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		830D47BE216CF3530003DE84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		830D47C1216CF3530003DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		830D47C3216CF3530003DE84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		830D47C6216CF3530003DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		830D47C8216CF3530003DE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83446F3F216D727600B87ED3 /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
-		8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzImageSegmentationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.release.xcconfig"; sourceTree = "<group>"; };
-		ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8D7CE66F17A61DA977138B /* Pods-FritzPoseEstimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPoseEstimationDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzPoseEstimationDemo/Pods-FritzPoseEstimationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6A08DD3E86E2A713EEF67E48 /* Pods-FritzPoseEstimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPoseEstimationDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzPoseEstimationDemo/Pods-FritzPoseEstimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		835093942266E79700A81041 /* FritzPoseEstimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzPoseEstimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835093972266E79700A81041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		835093992266E79700A81041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8350939C2266E79700A81041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8350939E2266E79A00A81041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		835093A12266E79A00A81041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		835093A32266E79A00A81041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9BF593862E7424228318F02 /* Pods_FritzPoseEstimationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzPoseEstimationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		830D47B6216CF3530003DE84 /* Frameworks */ = {
+		835093912266E79700A81041 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */,
+				637B793E6509269EA5E3D67A /* Pods_FritzPoseEstimationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		830D47B0216CF3530003DE84 = {
+		6B6A0C1CDEA2CB519307802D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				830D47BB216CF3530003DE84 /* FritzImageSegmentationDemo */,
-				830D47BA216CF3530003DE84 /* Products */,
-				E80DAFCE9CAD317B0AADF19B /* Pods */,
-				B96B639D589745193082A0A7 /* Frameworks */,
+				6A08DD3E86E2A713EEF67E48 /* Pods-FritzPoseEstimationDemo.debug.xcconfig */,
+				5A8D7CE66F17A61DA977138B /* Pods-FritzPoseEstimationDemo.release.xcconfig */,
 			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		830D47BA216CF3530003DE84 /* Products */ = {
+		80F091B9BB57DECF95370E3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		830D47BB216CF3530003DE84 /* FritzImageSegmentationDemo */ = {
-			isa = PBXGroup;
-			children = (
-				830D47BC216CF3530003DE84 /* AppDelegate.swift */,
-				830D47BE216CF3530003DE84 /* ViewController.swift */,
-				83446F3F216D727600B87ED3 /* CustomBlurView.swift */,
-				830D47C0216CF3530003DE84 /* Main.storyboard */,
-				830D47C3216CF3530003DE84 /* Assets.xcassets */,
-				830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */,
-				830D47C8216CF3530003DE84 /* Info.plist */,
-			);
-			path = FritzImageSegmentationDemo;
-			sourceTree = "<group>";
-		};
-		B96B639D589745193082A0A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */,
+				D9BF593862E7424228318F02 /* Pods_FritzPoseEstimationDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E80DAFCE9CAD317B0AADF19B /* Pods */ = {
+		8350938B2266E79700A81041 = {
 			isa = PBXGroup;
 			children = (
-				ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */,
-				E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */,
+				835093962266E79700A81041 /* FritzPoseEstimationDemo */,
+				835093952266E79700A81041 /* Products */,
+				6B6A0C1CDEA2CB519307802D /* Pods */,
+				80F091B9BB57DECF95370E3C /* Frameworks */,
 			);
-			path = Pods;
+			sourceTree = "<group>";
+		};
+		835093952266E79700A81041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835093942266E79700A81041 /* FritzPoseEstimationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		835093962266E79700A81041 /* FritzPoseEstimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				835093972266E79700A81041 /* AppDelegate.swift */,
+				835093992266E79700A81041 /* ViewController.swift */,
+				8350939B2266E79700A81041 /* Main.storyboard */,
+				8350939E2266E79A00A81041 /* Assets.xcassets */,
+				835093A02266E79A00A81041 /* LaunchScreen.storyboard */,
+				835093A32266E79A00A81041 /* Info.plist */,
+			);
+			path = FritzPoseEstimationDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		830D47B8216CF3530003DE84 /* FritzImageSegmentationDemo */ = {
+		835093932266E79700A81041 /* FritzPoseEstimationDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 830D47D6216CF3530003DE84 /* Build configuration list for PBXNativeTarget "FritzImageSegmentationDemo" */;
+			buildConfigurationList = 835093A62266E79A00A81041 /* Build configuration list for PBXNativeTarget "FritzPoseEstimationDemo" */;
 			buildPhases = (
-				C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */,
-				830D47B5216CF3530003DE84 /* Sources */,
-				830D47B6216CF3530003DE84 /* Frameworks */,
-				830D47B7216CF3530003DE84 /* Resources */,
-				F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */,
+				AB259BB30D8015E9D7B7AB83 /* [CP] Check Pods Manifest.lock */,
+				835093902266E79700A81041 /* Sources */,
+				835093912266E79700A81041 /* Frameworks */,
+				835093922266E79700A81041 /* Resources */,
+				F52AF00E29834A62B877F6DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FritzImageSegmentationDemo;
-			productName = FritzImageSegmentationDemo;
-			productReference = 830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */;
+			name = FritzPoseEstimationDemo;
+			productName = FritzPoseEstimationDemo;
+			productReference = 835093942266E79700A81041 /* FritzPoseEstimationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		830D47B1216CF3530003DE84 /* Project object */ = {
+		8350938C2266E79700A81041 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Fritz;
 				TargetAttributes = {
-					830D47B8216CF3530003DE84 = {
-						CreatedOnToolsVersion = 10.0;
+					835093932266E79700A81041 = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = 830D47B4216CF3530003DE84 /* Build configuration list for PBXProject "FritzImageSegmentationDemo" */;
+			buildConfigurationList = 8350938F2266E79700A81041 /* Build configuration list for PBXProject "FritzPoseEstimationDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,31 +133,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 830D47B0216CF3530003DE84;
-			productRefGroup = 830D47BA216CF3530003DE84 /* Products */;
+			mainGroup = 8350938B2266E79700A81041;
+			productRefGroup = 835093952266E79700A81041 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				830D47B8216CF3530003DE84 /* FritzImageSegmentationDemo */,
+				835093932266E79700A81041 /* FritzPoseEstimationDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		830D47B7216CF3530003DE84 /* Resources */ = {
+		835093922266E79700A81041 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830D47C7216CF3530003DE84 /* LaunchScreen.storyboard in Resources */,
-				830D47C4216CF3530003DE84 /* Assets.xcassets in Resources */,
-				830D47C2216CF3530003DE84 /* Main.storyboard in Resources */,
+				835093A22266E79A00A81041 /* LaunchScreen.storyboard in Resources */,
+				8350939F2266E79A00A81041 /* Assets.xcassets in Resources */,
+				8350939D2266E79700A81041 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */ = {
+		AB259BB30D8015E9D7B7AB83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,14 +172,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FritzImageSegmentationDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FritzPoseEstimationDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */ = {
+		F52AF00E29834A62B877F6DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,13 +187,13 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FritzPoseEstimationDemo/Pods-FritzPoseEstimationDemo-frameworks.sh",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/FritzVisionPeopleSegmentationModel/Frameworks/FritzVisionPeopleSegmentationModel.framework",
+				"${PODS_ROOT}/FritzVisionPoseModel/Frameworks/FritzVisionPoseModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -207,41 +204,40 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPeopleSegmentationModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPoseModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzPoseEstimationDemo/Pods-FritzPoseEstimationDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		830D47B5216CF3530003DE84 /* Sources */ = {
+		835093902266E79700A81041 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830D47BF216CF3530003DE84 /* ViewController.swift in Sources */,
-				83446F40216D727600B87ED3 /* CustomBlurView.swift in Sources */,
-				830D47BD216CF3530003DE84 /* AppDelegate.swift in Sources */,
+				8350939A2266E79700A81041 /* ViewController.swift in Sources */,
+				835093982266E79700A81041 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		830D47C0216CF3530003DE84 /* Main.storyboard */ = {
+		8350939B2266E79700A81041 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				830D47C1216CF3530003DE84 /* Base */,
+				8350939C2266E79700A81041 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */ = {
+		835093A02266E79A00A81041 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				830D47C6216CF3530003DE84 /* Base */,
+				835093A12266E79A00A81041 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -249,7 +245,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		830D47D4216CF3530003DE84 /* Debug */ = {
+		835093A42266E79A00A81041 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,7 +306,7 @@
 			};
 			name = Debug;
 		};
-		830D47D5216CF3530003DE84 /* Release */ = {
+		835093A52266E79A00A81041 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -365,40 +361,40 @@
 			};
 			name = Release;
 		};
-		830D47D7216CF3530003DE84 /* Debug */ = {
+		835093A72266E79A00A81041 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */;
+			baseConfigurationReference = 6A08DD3E86E2A713EEF67E48 /* Pods-FritzPoseEstimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FritzImageSegmentationDemo/Info.plist;
+				INFOPLIST_FILE = FritzPoseEstimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzImageSegmentationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPoseEstimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		830D47D8216CF3530003DE84 /* Release */ = {
+		835093A82266E79A00A81041 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */;
+			baseConfigurationReference = 5A8D7CE66F17A61DA977138B /* Pods-FritzPoseEstimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = FritzImageSegmentationDemo/Info.plist;
+				INFOPLIST_FILE = FritzPoseEstimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzImageSegmentationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPoseEstimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -406,25 +402,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		830D47B4216CF3530003DE84 /* Build configuration list for PBXProject "FritzImageSegmentationDemo" */ = {
+		8350938F2266E79700A81041 /* Build configuration list for PBXProject "FritzPoseEstimationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				830D47D4216CF3530003DE84 /* Debug */,
-				830D47D5216CF3530003DE84 /* Release */,
+				835093A42266E79A00A81041 /* Debug */,
+				835093A52266E79A00A81041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		830D47D6216CF3530003DE84 /* Build configuration list for PBXNativeTarget "FritzImageSegmentationDemo" */ = {
+		835093A62266E79A00A81041 /* Build configuration list for PBXNativeTarget "FritzPoseEstimationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				830D47D7216CF3530003DE84 /* Debug */,
-				830D47D8216CF3530003DE84 /* Release */,
+				835093A72266E79A00A81041 /* Debug */,
+				835093A82266E79A00A81041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 830D47B1216CF3530003DE84 /* Project object */;
+	rootObject = 8350938C2266E79700A81041 /* Project object */;
 }

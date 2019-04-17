@@ -182,12 +182,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/Fritz.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModelPaintings.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
+				"${PODS_ROOT}/FritzVisionStyleModelPaintings/Frameworks/FritzVisionStyleModelPaintings.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -363,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
