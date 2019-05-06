@@ -47,7 +47,7 @@ pod install
 
 **Step 4: Open up a new XCode project**
 
-(XCode > Open > FritzPizzaDetectorDemo.xcworkspace)
+XCode > Open > FritzPizzaDetectorDemo.xcworkspace
 
 **Step 5: Run the app**
 

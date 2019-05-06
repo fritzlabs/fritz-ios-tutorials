@@ -40,7 +40,7 @@ pod install
 
 **Step 4: Open up a new XCode project**
 
-(XCode > Open > FritzHairColorDemo.xcworkspace)
+XCode > Open > FritzHairColorDemo.xcworkspace
 
 **Step 5: Run the app**
 
