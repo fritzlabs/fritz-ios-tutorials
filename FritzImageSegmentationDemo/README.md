@@ -6,7 +6,7 @@ In this app, we use the People Segmentation API by Fritz in order to build a por
 
 For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/building-an-image-segmentation-app-in-ios-3377eb4a3e7c)
 
-![](images/image_segmentation_ios.jpg)
+<img src="images/image_segmentation_ios.jpg" width="250" />
 
 ## Requirements
 

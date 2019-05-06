@@ -6,7 +6,7 @@ In this app, we use the Hair Segmentation model by Fritz in order to allow users
 
 For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/try-on-a-new-style-build-an-ios-app-to-change-your-hair-color-with-fritz-hair-segmentation-177324b077b3)
 
-![](images/hair_seg_ios.jpg)
+<img src="images/hair_seg_ios.jpg" width="250" />
 
 ## Requirements
 

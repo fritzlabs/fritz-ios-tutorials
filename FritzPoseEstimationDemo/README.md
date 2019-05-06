@@ -6,7 +6,7 @@ In this app, we use the Pose Estimation API by Fritz in order to identify and tr
 
 For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/pose-estimation-on-ios-with-fritz-60c8e5f7d195)
 
-![](images/pose_estimation_ios.jpg)
+<img src="images/pose_estimation_ios.jpg" width="250" />
 
 ## Requirements
 

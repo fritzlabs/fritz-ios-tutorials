@@ -6,7 +6,7 @@ In this app, we use the [Style Transfer API by Fritz](https://www.fritz.ai/featu
 
 For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/real-time-style-transfer-for-ios-transform-your-photos-and-videos-into-masterpieces-f04111fcd2ff)
 
-![](images/style_transfer_ios.jpg)
+<img src="images/style_transfer_ios.jpg" width="250" />
 
 ## Requirements
 
