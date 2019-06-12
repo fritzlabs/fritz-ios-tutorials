@@ -17,7 +17,7 @@ PODS:
     - FritzBase/Vision
 
 DEPENDENCIES:
-  - Fritz (~> 3.3.0)
+  - Fritz
   - Fritz/VisionSegmentationModel/Hair
 
 SPEC REPOS:
@@ -31,6 +31,6 @@ SPEC CHECKSUMS:
   FritzBase: 126502d993f8225561cf2e1226eb24169009a726
   FritzVisionHairSegmentationModel: f9c6bc9ae6137abafdf279e8879b45352c640f0b
 
-PODFILE CHECKSUM: aad0545cc1b503e9c564f775d89574541844d2e3
+PODFILE CHECKSUM: 2d1f3f0d2c497c8f592712e7c075f758b8b8f44e
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.6.1

@@ -13,7 +13,6 @@
 		83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AC226A4B6200FF678D /* Assets.xcassets */; };
 		83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */; };
 		A3089B330C5471177D90773A /* Pods_FritzHairColorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */; };
-		D413AC702294695E00E39CD1 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		83E704AF226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E704B1226A4B6200FF678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26562A73DD601DCB1888B65 /* Pods-FritzHairColorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzHairColorDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
 		DCA977652A98D87A8EB5BE5A /* Pods-FritzHairColorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzHairColorDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 				83E704A9226A4B6200FF678D /* Main.storyboard */,
 				83E704AC226A4B6200FF678D /* Assets.xcassets */,
 				83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */,
-				D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */,
 				83E704B1226A4B6200FF678D /* Info.plist */,
 			);
 			path = FritzHairColorDemo;
@@ -153,7 +150,6 @@
 			files = (
 				83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */,
 				83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */,
-				D413AC702294695E00E39CD1 /* Fritz-Info.plist in Resources */,
 				83E704AB226A4B6200FF678D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3RGJF7P9D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzHairColorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3RGJF7P9D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzHairColorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
