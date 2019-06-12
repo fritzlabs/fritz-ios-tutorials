@@ -33,6 +33,7 @@ Install dependencies via Cocoapods by running `pod install` from `fritz-ios-tuto
 
 ```
 cd fritz-ios-tutorials/FritzPetStickerDemo
+pod repo update
 pod install
 ```
 
