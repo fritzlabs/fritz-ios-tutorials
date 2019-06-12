@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07E1F5075AFAB587890D3780 /* Pods_FritzPetStickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */; };
 		83E704A6226A4B6200FF678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A5226A4B6200FF678D /* AppDelegate.swift */; };
 		83E704A8226A4B6200FF678D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A7226A4B6200FF678D /* ViewController.swift */; };
 		83E704AB226A4B6200FF678D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704A9226A4B6200FF678D /* Main.storyboard */; };
 		83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AC226A4B6200FF678D /* Assets.xcassets */; };
 		83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */; };
-		A3089B330C5471177D90773A /* Pods_FritzHairColorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */; };
-		D413AC702294695E00E39CD1 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzHairColorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83E704A2226A4B6200FF678D /* FritzHairColorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzHairColorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPetStickerDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzPetStickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E704A5226A4B6200FF678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83E704A7226A4B6200FF678D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83E704A7226A4B6200FF678D /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		83E704AA226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83E704AC226A4B6200FF678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E704AF226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E704B1226A4B6200FF678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A26562A73DD601DCB1888B65 /* Pods-FritzHairColorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzHairColorDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
-		DCA977652A98D87A8EB5BE5A /* Pods-FritzHairColorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzHairColorDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzPetStickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPetStickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3089B330C5471177D90773A /* Pods_FritzHairColorDemo.framework in Frameworks */,
+				07E1F5075AFAB587890D3780 /* Pods_FritzPetStickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +43,8 @@
 		3416539E3282F0B389088B90 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCA977652A98D87A8EB5BE5A /* Pods-FritzHairColorDemo.debug.xcconfig */,
-				A26562A73DD601DCB1888B65 /* Pods-FritzHairColorDemo.release.xcconfig */,
+				B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */,
+				53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -54,7 +52,7 @@
 		83E70499226A4B6200FF678D = {
 			isa = PBXGroup;
 			children = (
-				83E704A4226A4B6200FF678D /* FritzHairColorDemo */,
+				83E704A4226A4B6200FF678D /* FritzPetStickerDemo */,
 				83E704A3226A4B6200FF678D /* Products */,
 				3416539E3282F0B389088B90 /* Pods */,
 				84BEB48CA4AE3E92296CE6BD /* Frameworks */,
@@ -64,12 +62,12 @@
 		83E704A3226A4B6200FF678D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83E704A2226A4B6200FF678D /* FritzHairColorDemo.app */,
+				83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83E704A4226A4B6200FF678D /* FritzHairColorDemo */ = {
+		83E704A4226A4B6200FF678D /* FritzPetStickerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				83E704A5226A4B6200FF678D /* AppDelegate.swift */,
@@ -77,16 +75,15 @@
 				83E704A9226A4B6200FF678D /* Main.storyboard */,
 				83E704AC226A4B6200FF678D /* Assets.xcassets */,
 				83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */,
-				D413AC6F2294695E00E39CD1 /* Fritz-Info.plist */,
 				83E704B1226A4B6200FF678D /* Info.plist */,
 			);
-			path = FritzHairColorDemo;
+			path = FritzPetStickerDemo;
 			sourceTree = "<group>";
 		};
 		84BEB48CA4AE3E92296CE6BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */,
+				AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83E704A1226A4B6200FF678D /* FritzHairColorDemo */ = {
+		83E704A1226A4B6200FF678D /* FritzPetStickerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzHairColorDemo" */;
+			buildConfigurationList = 83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzPetStickerDemo" */;
 			buildPhases = (
 				A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */,
 				83E7049E226A4B6200FF678D /* Sources */,
@@ -108,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = FritzHairColorDemo;
-			productName = FritzHairColorDemo;
-			productReference = 83E704A2226A4B6200FF678D /* FritzHairColorDemo.app */;
+			name = FritzPetStickerDemo;
+			productName = FritzPetStickerDemo;
+			productReference = 83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzHairColorDemo" */;
+			buildConfigurationList = 83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzPetStickerDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83E704A1226A4B6200FF678D /* FritzHairColorDemo */,
+				83E704A1226A4B6200FF678D /* FritzPetStickerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -153,7 +150,6 @@
 			files = (
 				83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */,
 				83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */,
-				D413AC702294695E00E39CD1 /* Fritz-Info.plist in Resources */,
 				83E704AB226A4B6200FF678D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,13 +165,13 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo-frameworks.sh",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/FritzVisionHairSegmentationModel/Frameworks/FritzVisionHairSegmentationModel.framework",
+				"${PODS_ROOT}/FritzVisionPetSegmentationModel/Frameworks/FritzVisionPetSegmentationModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -186,11 +182,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionHairSegmentationModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPetSegmentationModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */ = {
@@ -208,7 +204,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FritzHairColorDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FritzPetStickerDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,17 +363,17 @@
 		};
 		83E704B5226A4B6200FF678D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCA977652A98D87A8EB5BE5A /* Pods-FritzHairColorDemo.debug.xcconfig */;
+			baseConfigurationReference = B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3RGJF7P9D;
-				INFOPLIST_FILE = FritzHairColorDemo/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzPetStickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzHairColorDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPetStickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,17 +382,17 @@
 		};
 		83E704B6226A4B6200FF678D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A26562A73DD601DCB1888B65 /* Pods-FritzHairColorDemo.release.xcconfig */;
+			baseConfigurationReference = 53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T3RGJF7P9D;
-				INFOPLIST_FILE = FritzHairColorDemo/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzPetStickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzHairColorDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPetStickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzHairColorDemo" */ = {
+		83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzPetStickerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83E704B2226A4B6200FF678D /* Debug */,
@@ -415,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzHairColorDemo" */ = {
+		83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzPetStickerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83E704B5226A4B6200FF678D /* Debug */,
