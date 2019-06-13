@@ -1,0 +1,34 @@
+PODS:
+  - Fritz (3.5.2):
+    - Fritz/Vision (= 3.5.2)
+  - Fritz/Vision (3.5.2):
+    - FritzBase/Vision (= 3.5.2)
+  - FritzBase/Core (3.5.2)
+  - FritzBase/CoreMLHelpers (3.5.2)
+  - FritzBase/ManagedModel (3.5.2):
+    - FritzBase/Core (= 3.5.2)
+  - FritzBase/Vision (3.5.2):
+    - FritzBase/Core (= 3.5.2)
+    - FritzBase/CoreMLHelpers (= 3.5.2)
+    - FritzBase/ManagedModel (= 3.5.2)
+  - FritzVisionSkySegmentationModel (3.5.2):
+    - FritzBase/Vision (= 3.5.2)
+
+DEPENDENCIES:
+  - Fritz
+  - FritzVisionSkySegmentationModel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Fritz
+    - FritzBase
+    - FritzVisionSkySegmentationModel
+
+SPEC CHECKSUMS:
+  Fritz: 4393e929303fdc7e065e0272ca9aa509b518fca8
+  FritzBase: b5df2818f5758401c48c6ff9d02a7f63b6b1c514
+  FritzVisionSkySegmentationModel: 2c1964b47eb58cc1c632101123bf58cb71e50eae
+
+PODFILE CHECKSUM: 639d0be4c2e0eaa9afd27041a802c5404e3db74d
+
+COCOAPODS: 1.6.2
