@@ -4,7 +4,7 @@
 
 In this app, we use the Pet Segmentation model by Fritz to create stickers of dogs.
 
-For the full tutorial, visit [our post on XXXXX]()
+For the full tutorial, visit [our post on Better Programming](https://medium.com/better-programming/creating-a-pet-sticker-app-on-ios-with-fritz-pet-segmentation-35bce07f344f?source=friends_link&sk=9c5b41ad9baa2ef00e793638d9140cfa).
 
 <img src="images/pet_sticker_result.jpg" width="250" />
 
