@@ -4,7 +4,7 @@
 
 In this app, we use the Pet Segmentation model by Fritz to create stickers of dogs.
 
-For the full tutorial, visit [our post on Better Programming](https://medium.com/better-programming/creating-a-pet-sticker-app-on-ios-with-fritz-pet-segmentation-35bce07f344f?source=friends_link&sk=9c5b41ad9baa2ef00e793638d9140cfa).
+For the full tutorial, visit [our post on XXXXX]()
 
 <img src="images/pet_sticker_result.jpg" width="250" />
 
@@ -25,7 +25,7 @@ git clone https://github.com/fritzlabs/fritz-ios-tutorials.git
 
 **Step 2: Create a Fritz Account**
 
-In order to use Fritz, please [register for a free account](https://app.fritz.ai/register) and [follow the directions](https://docs.fritz.ai/quickstart.html#ios) for setting up a new app.
+In order to use Fritz, please [register for a free account](https://app.fritz.ai/register) and [follow the directions](https://docs.fritz.ai/develop/get-started-sdk.html) for setting up a new app.
 
 **Step 3: Setup the project via Cocoapods**
 
@@ -54,7 +54,7 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 
 ## Setup a Fritz account
 
-[iOS SDK instructions](https://docs.fritz.ai/quickstart.html#ios)
+[iOS SDK instructions](https://docs.fritz.ai/develop/get-started-sdk.html)
 
 ## Documentation
 
