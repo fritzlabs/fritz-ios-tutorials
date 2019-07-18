@@ -4,6 +4,8 @@
 
 In this app, we use the Sky Segmentation model by Fritz to create gifs where the sky moves.
 
+For the full tutorial, visit [our post on XXXXX]()
+
 <img src="images/sky_segmentation_result.gif" width="250" />
 
 ## Requirements
@@ -23,7 +25,7 @@ git clone https://github.com/fritzlabs/fritz-ios-tutorials.git
 
 **Step 2: Create a Fritz Account**
 
-In order to use Fritz, please [register for a free account](https://app.fritz.ai/register) and [follow the directions](https://docs.fritz.ai/quickstart.html#ios) for setting up a new app.
+In order to use Fritz, please [register for a free account](https://app.fritz.ai/register) and [follow the directions](https://docs.fritz.ai/develop/get-started-sdk.html) for setting up a new app.
 
 **Step 3: Setup the project via Cocoapods**
 
@@ -52,7 +54,7 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 
 ## Setup a Fritz account
 
-[iOS SDK instructions](https://docs.fritz.ai/quickstart.html#ios)
+[iOS SDK instructions](https://docs.fritz.ai/develop/get-started-sdk.html)
 
 ## Documentation
 
