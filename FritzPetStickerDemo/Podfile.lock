@@ -1,23 +1,23 @@
 PODS:
-  - Fritz (3.4.0):
-    - Fritz/Vision (= 3.4.0)
-  - Fritz/Vision (3.4.0):
-    - FritzBase/Vision
-  - Fritz/VisionSegmentationModel/Pet (3.4.0):
-    - FritzVisionPetSegmentationModel
-  - FritzBase/Core (3.5.2)
-  - FritzBase/CoreMLHelpers (3.5.2)
-  - FritzBase/ManagedModel (3.5.2):
-    - FritzBase/Core (= 3.5.2)
-  - FritzBase/Vision (3.5.2):
-    - FritzBase/Core (= 3.5.2)
-    - FritzBase/CoreMLHelpers (= 3.5.2)
-    - FritzBase/ManagedModel (= 3.5.2)
-  - FritzVisionPetSegmentationModel (3.5.2):
-    - FritzBase/Vision (= 3.5.2)
+  - Fritz (3.6.1):
+    - Fritz/Vision (= 3.6.1)
+  - Fritz/Vision (3.6.1):
+    - FritzBase/Vision (= 3.6.1)
+  - Fritz/VisionSegmentationModel/Pet (3.6.1):
+    - FritzVisionPetSegmentationModel (= 3.6.1)
+  - FritzBase/Core (3.6.1)
+  - FritzBase/CoreMLHelpers (3.6.1)
+  - FritzBase/ManagedModel (3.6.1):
+    - FritzBase/Core (= 3.6.1)
+  - FritzBase/Vision (3.6.1):
+    - FritzBase/Core (= 3.6.1)
+    - FritzBase/CoreMLHelpers (= 3.6.1)
+    - FritzBase/ManagedModel (= 3.6.1)
+  - FritzVisionPetSegmentationModel (3.6.1):
+    - FritzBase/Vision (= 3.6.1)
 
 DEPENDENCIES:
-  - Fritz (~> 3.4.0)
+  - Fritz
   - Fritz/VisionSegmentationModel/Pet
 
 SPEC REPOS:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - FritzVisionPetSegmentationModel
 
 SPEC CHECKSUMS:
-  Fritz: 8b7fc16a778acba78b00b6083127bea3afbba2e7
-  FritzBase: b5df2818f5758401c48c6ff9d02a7f63b6b1c514
-  FritzVisionPetSegmentationModel: df29a7902f2091c0d9a219a231feae50dad6ebe1
+  Fritz: 9c1359e37c1e615ce8f2cc322fea0d4d004f0b26
+  FritzBase: 089331dcdf6bd08f637adf69d4e6a4c2fcdd1637
+  FritzVisionPetSegmentationModel: 2ae5aa8b46eb2ba70bc783f15345fe9ec45c064f
 
-PODFILE CHECKSUM: 681940ef8248092ae0690d47e9845b094b1b2edd
+PODFILE CHECKSUM: b4e114d71eb70431b5fea7b17f632e90e25cb6bf
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.7.4
