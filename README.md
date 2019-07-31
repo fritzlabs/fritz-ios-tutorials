@@ -27,7 +27,7 @@ If you are new to Fritz, I'd recommend getting started with our Heartbeat App. Y
 - Heartbeat App - Our kitchen sink project showcases all on-device Vision APIs and Custom Model usage. ([Open Source Code](https://github.com/fritzlabs/heartbeat-ios))
 - Fritz Image Segmentation Demo - Create a portrait mode filter with People Segmentation ([tutorial](https://heartbeat.fritz.ai/building-an-image-segmentation-app-in-ios-3377eb4a3e7c)).
 - Fritz Hair Color Demo - Try out different hair colors and styles ([tutorial](https://heartbeat.fritz.ai/try-on-a-new-style-build-an-ios-app-to-change-your-hair-color-with-fritz-hair-segmentation-177324b077b3)).
-- Fritz Pizza Detector Demo - Create Domino's Points for Pies feature by recognizing pizza ([tutorial](heartbeat.fritz.ai/recreate-dominos-points-for-pies-app-on-ios-with-fritz-image-labeling-2ed23398e1c2)).
+- Fritz Pizza Detector Demo - Create Domino's Points for Pies feature by recognizing pizza ([tutorial](https://heartbeat.fritz.ai/recreate-dominos-points-for-pies-app-on-ios-with-fritz-image-labeling-2ed23398e1c2)).
 - Fritz Style Transfer Demo - Transform each frame into a work of art. ([tutorial](https://heartbeat.fritz.ai/real-time-style-transfer-for-ios-transform-your-photos-and-videos-into-masterpieces-f04111fcd2ff)).
 - Fritz Pose Estimation Demo - Track body position and motion. ([tutorial](https://heartbeat.fritz.ai/pose-estimation-on-ios-with-fritz-60c8e5f7d195)).
 
