@@ -1,36 +1,36 @@
 PODS:
-  - Fritz (3.2.4):
-    - Fritz/Vision (= 3.2.4)
-  - Fritz/Vision (3.2.4):
-    - FritzBase/Vision
-  - Fritz/VisionSegmentationModel/People (3.2.4):
-    - FritzVisionPeopleSegmentationModel
-  - FritzBase/Core (3.2.4)
-  - FritzBase/CoreMLHelpers (3.2.4)
-  - FritzBase/ManagedModel (3.2.4):
-    - FritzBase/Core
-  - FritzBase/Vision (3.2.4):
-    - FritzBase/Core
-    - FritzBase/CoreMLHelpers
-    - FritzBase/ManagedModel
-  - FritzVisionPeopleSegmentationModel (3.2.4):
-    - FritzBase/Vision
+  - Fritz (3.7.0):
+    - Fritz/Vision (= 3.7.0)
+  - Fritz/Vision (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+  - Fritz/VisionSegmentationModel/People (3.7.0):
+    - FritzVisionPeopleSegmentationModel (= 3.7.0)
+  - FritzBase/Core (3.7.0)
+  - FritzBase/CoreMLHelpers (3.7.0)
+  - FritzBase/ManagedModel (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+  - FritzBase/Vision (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+    - FritzBase/CoreMLHelpers (= 3.7.0)
+    - FritzBase/ManagedModel (= 3.7.0)
+  - FritzVisionPeopleSegmentationModel (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
 
 DEPENDENCIES:
-  - Fritz (~> 3.2.4)
+  - Fritz (~> 3.7.0)
   - Fritz/VisionSegmentationModel/People
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Fritz
     - FritzBase
     - FritzVisionPeopleSegmentationModel
 
 SPEC CHECKSUMS:
-  Fritz: 4981de4fb3e866624d25b15039ef714a404ab283
-  FritzBase: cbd4e9344ed7c342ee537dd4cacb7a18acf89e3b
-  FritzVisionPeopleSegmentationModel: cb399d25ce1c09a4729e6ea76c124b0934d8dd8a
+  Fritz: 9a069783f9024c98656c9ac4fa0f30712c1ec23b
+  FritzBase: 664ec16001a9d03536dae03dcbc469452bf040b9
+  FritzVisionPeopleSegmentationModel: ec043eed69caadc0a3e4c62c5e672fbcccb23b22
 
-PODFILE CHECKSUM: f4338d514e5d952bcccd744f2b7b9433f7d99f7b
+PODFILE CHECKSUM: 6f3a2a48fc01010e46d60e6b2be3d552ac5bc5bd
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.0.beta.1

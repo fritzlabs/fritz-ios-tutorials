@@ -41,10 +41,7 @@ class ViewController: UIViewController {
       self.cameraSession.addInput(input)
       self.cameraSession.addOutput(output)
       self.cameraSession.commitConfiguration()
-      self.cameraSession.sessionPreset = .vga640x480
-
-      // Change orientation so all images are properly oriented for portrait orientation.
-      output.connection(with: .video)?.videoOrientation = .portrait
+      self.cameraSession.sessionPreset = .photo
     }
 
   }
@@ -65,9 +62,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
     // 1
-    let image = FritzVisionImage(buffer: sampleBuffer)
-    image.metadata = FritzVisionImageMetadata()
-    image.metadata?.orientation = FritzImageOrientation(from: connection)
+    let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
 
     // 2
     let options = FritzVisionLabelModelOptions()

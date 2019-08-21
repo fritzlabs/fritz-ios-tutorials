@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		83BE4F0422B2AE7400C6C5AF /* mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83BE4F0222B2AE7400C6C5AF /* mountains.jpg */; };
 		83BE4F0522B2AE7400C6C5AF /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BE4F0322B2AE7400C6C5AF /* clouds.png */; };
 		AC8F272A1BA87990DFF1B678 /* Pods_FritzSkyReplacementDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B061FC3071D1AEEC931E37C9 /* Pods_FritzSkyReplacementDemo.framework */; };
-		D4B939CF22B2BA440017A08C /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4B939CE22B2BA440017A08C /* Fritz-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		83BE4F0222B2AE7400C6C5AF /* mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpg; sourceTree = "<group>"; };
 		83BE4F0322B2AE7400C6C5AF /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		B061FC3071D1AEEC931E37C9 /* Pods_FritzSkyReplacementDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzSkyReplacementDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B939CE22B2BA440017A08C /* Fritz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fritz-Info.plist"; sourceTree = "<group>"; };
 		D740A4F1C963ED2A12454102 /* Pods-FritzSkyReplacementDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzSkyReplacementDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzSkyReplacementDemo/Pods-FritzSkyReplacementDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 				837BFB8322AAE6FB00010A93 /* AppDelegate.swift */,
 				837BFB8522AAE6FB00010A93 /* ViewController.swift */,
 				837BFB8722AAE6FB00010A93 /* Main.storyboard */,
-				D4B939CE22B2BA440017A08C /* Fritz-Info.plist */,
 				837BFB8A22AAE6FC00010A93 /* Assets.xcassets */,
 				837BFB8C22AAE6FC00010A93 /* LaunchScreen.storyboard */,
 				837BFB8F22AAE6FC00010A93 /* Info.plist */,
@@ -165,7 +162,6 @@
 				83BE4F0522B2AE7400C6C5AF /* clouds.png in Resources */,
 				837BFB8B22AAE6FC00010A93 /* Assets.xcassets in Resources */,
 				837BFB8922AAE6FB00010A93 /* Main.storyboard in Resources */,
-				D4B939CF22B2BA440017A08C /* Fritz-Info.plist in Resources */,
 				83BE4F0422B2AE7400C6C5AF /* mountains.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,26 +175,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FritzSkyReplacementDemo/Pods-FritzSkyReplacementDemo-frameworks.sh",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/FritzVisionSkySegmentationModel/Frameworks/FritzVisionSkySegmentationModel.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FritzSkyReplacementDemo/Pods-FritzSkyReplacementDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionSkySegmentationModel.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FritzSkyReplacementDemo/Pods-FritzSkyReplacementDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

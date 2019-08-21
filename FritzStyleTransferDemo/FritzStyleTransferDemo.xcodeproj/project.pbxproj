@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -180,23 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
-				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/FritzVisionStyleModelPaintings/Frameworks/FritzVisionStyleModelPaintings.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelPaintings.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
