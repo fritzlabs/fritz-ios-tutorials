@@ -36,10 +36,8 @@ class ViewController: UIViewController {
       self.cameraSession.addInput(input)
       self.cameraSession.addOutput(output)
       self.cameraSession.commitConfiguration()
-      self.cameraSession.sessionPreset = .vga640x480
+      self.cameraSession.sessionPreset = .photo
 
-      // Change orientation so all images are properly oriented for portrait orientation.
-      output.connection(with: .video)?.videoOrientation = .portrait
       // Front camera images are mirrored.
       output.connection(with: .video)?.isVideoMirrored = true
     }
@@ -69,16 +67,13 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
   /// The method used to blend the hair mask with the underlying image.
   /// Soft light produces the best results in our tests, but check out
   /// .hue and .color for different effects.
-  var blendMode: CGBlendMode { return .softLight }
+  var blendMode: CIBlendKernel { return .softLight }
 
   /// Color of the mask.
   var color: UIColor { return .blue }
 
-
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-    let image = FritzVisionImage(buffer: sampleBuffer)
-    image.metadata = FritzVisionImageMetadata()
-    image.metadata?.orientation = FritzImageOrientation(from: connection)
+    let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
 
     guard let result = try? visionModel.predict(image),
       let mask = result.buildSingleClassMask(
@@ -91,10 +86,9 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     let blended = image.blend(
       withMask: mask,
-      blendMode: blendMode,
-      interpolationQuality: .medium,
-      opacity: opacity)
-
+      blendKernel: blendMode,
+      opacity: opacity
+    )
 
     DispatchQueue.main.async {
       self.cameraView.image = blended

@@ -10,14 +10,6 @@ UINavigationControllerDelegate {
   var backgroundView: UIImageView!
 
   let context = CIContext()
-
-  /// Scores output from model greater than this value will be set as 1.
-  /// Lowering this value will make the mask more intense for lower confidence values.
-  var clippingScoresAbove: Double { return 0.6 }
-  
-  /// Values lower than this value will not appear in the mask.
-  var zeroingScoresBelow: Double { return 0.4 }
-
   private lazy var visionModel = FritzVisionPetSegmentationModel()
 
   override func viewDidLoad() {
@@ -51,6 +43,17 @@ UINavigationControllerDelegate {
     })
     createSticker(image)
   }
+}
+
+
+extension ViewController {
+
+  /// Scores output from model greater than this value will be set as 1.
+  /// Lowering this value will make the mask more intense for lower confidence values.
+  var clippingScoresAbove: Double { return 0.6 }
+
+  /// Values lower than this value will not appear in the mask.
+  var zeroingScoresBelow: Double { return 0.4 }
 
   func createSticker(_ image: UIImage) {
     let fritzImage = FritzVisionImage(image: image)

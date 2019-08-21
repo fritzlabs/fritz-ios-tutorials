@@ -47,8 +47,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
     self.captureSession.addOutput(videoOutput)
     self.captureSession.startRunning()
-
-    videoOutput.connection(with: .video)?.videoOrientation = .portrait
   }
 
   override func viewWillLayoutSubviews() {
@@ -63,7 +61,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
   }
 
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-    let fritzImage = FritzVisionImage(buffer: sampleBuffer)
+    let fritzImage = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
     guard let stylizedImage = try? styleModel.predict(fritzImage) else { return }
       let styled = UIImage(pixelBuffer: stylizedImage)
       DispatchQueue.main.async {

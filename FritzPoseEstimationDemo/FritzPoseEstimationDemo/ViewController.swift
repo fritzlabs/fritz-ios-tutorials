@@ -30,8 +30,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
       else { return session }
     session.addInput(input)
 
-    // The style transfer takes a 640x480 image as input and outputs an image of the same size.
-    session.sessionPreset = AVCaptureSession.Preset.vga640x480
+    session.sessionPreset = .photo
     return session
   }()
 
@@ -48,8 +47,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
     self.captureSession.addOutput(videoOutput)
     self.captureSession.startRunning()
-
-    videoOutput.connection(with: .video)?.videoOrientation = .portrait
   }
 
   override func viewWillLayoutSubviews() {
@@ -63,9 +60,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // Dispose of any resources that can be recreated.
   }
 
-  func displayInputImage(_ sampleBuffer: CMSampleBuffer) {
-    guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-    let image = UIImage(pixelBuffer: pixelBuffer)
+  func displayInputImage(_ image: FritzVisionImage) {
+    guard let rotated = image.rotate() else { return }
+
+    let image = UIImage(pixelBuffer: rotated)
     DispatchQueue.main.async {
       self.previewView.image = image
     }
@@ -73,19 +71,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 
-    let fritzImage = FritzVisionImage(buffer: sampleBuffer)
-
+    let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
     let options = FritzVisionPoseModelOptions()
     options.minPoseThreshold = 0.4
 
-    guard let result = try? poseModel.predict(fritzImage, options: options) else {
+    guard let result = try? poseModel.predict(image, options: options) else {
       // If there was no pose, display original image
-      displayInputImage(sampleBuffer)
+      displayInputImage(image)
       return
     }
 
-    guard var pose = result.decodePose() else {
-      displayInputImage(sampleBuffer)
+    guard var pose = result.pose() else {
+      displayInputImage(image)
       return
     }
 
@@ -93,18 +90,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // Will increase lag of pose a bit.
     // pose = poseSmoother.smoothe(pose)
 
-    guard let poseResult = result.drawPose(pose) else {
-      displayInputImage(sampleBuffer)
+    guard let poseResult = image.draw(pose: pose) else {
+      displayInputImage(image)
       return
     }
-
-    // if let smoothed = result.drawPose() {
 
     DispatchQueue.main.async {
       self.previewView.image = poseResult
     }
-
-
-
   }
 }

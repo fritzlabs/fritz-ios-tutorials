@@ -1,36 +1,36 @@
 PODS:
-  - Fritz (3.2.4):
-    - Fritz/Vision (= 3.2.4)
-  - Fritz/Vision (3.2.4):
-    - FritzBase/Vision
-  - Fritz/VisionPoseModel (3.2.4):
-    - FritzVisionPoseModel
-  - FritzBase/Core (3.2.4)
-  - FritzBase/CoreMLHelpers (3.2.4)
-  - FritzBase/ManagedModel (3.2.4):
-    - FritzBase/Core
-  - FritzBase/Vision (3.2.4):
-    - FritzBase/Core
-    - FritzBase/CoreMLHelpers
-    - FritzBase/ManagedModel
-  - FritzVisionPoseModel (3.2.4):
-    - FritzBase/Vision
+  - Fritz (3.7.0):
+    - Fritz/Vision (= 3.7.0)
+  - Fritz/Vision (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+  - Fritz/VisionPoseModel (3.7.0):
+    - FritzVisionPoseModel (= 3.7.0)
+  - FritzBase/Core (3.7.0)
+  - FritzBase/CoreMLHelpers (3.7.0)
+  - FritzBase/ManagedModel (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+  - FritzBase/Vision (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+    - FritzBase/CoreMLHelpers (= 3.7.0)
+    - FritzBase/ManagedModel (= 3.7.0)
+  - FritzVisionPoseModel (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
 
 DEPENDENCIES:
-  - Fritz (~> 3.2.4)
+  - Fritz (~> 3.7.0)
   - Fritz/VisionPoseModel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Fritz
     - FritzBase
     - FritzVisionPoseModel
 
 SPEC CHECKSUMS:
-  Fritz: 4981de4fb3e866624d25b15039ef714a404ab283
-  FritzBase: cbd4e9344ed7c342ee537dd4cacb7a18acf89e3b
-  FritzVisionPoseModel: a67e0ec7b3ac8bb96d358c1ec598bbc0f5a27e9f
+  Fritz: 9a069783f9024c98656c9ac4fa0f30712c1ec23b
+  FritzBase: 664ec16001a9d03536dae03dcbc469452bf040b9
+  FritzVisionPoseModel: d43ade434b877625ef169bf81f051fc294fdf3ae
 
-PODFILE CHECKSUM: 7dabfc92b28dd829a6a45277ec1b033bd3738cfe
+PODFILE CHECKSUM: 74c4785007fddb1d068a5fece6571ce16cba6fe0
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.0.beta.1

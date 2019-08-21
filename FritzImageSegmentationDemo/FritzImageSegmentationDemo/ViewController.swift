@@ -37,7 +37,8 @@ class ViewController: UIViewController {
     view.addSubview(cameraView)
 
     // Setup camera
-    guard let device = AVCaptureDevice.default(for: .video), let input = try? AVCaptureDeviceInput(device: device) else { return }
+    guard let device = AVCaptureDevice.default(for: .video),
+      let input = try? AVCaptureDeviceInput(device: device) else { return }
 
     let output = AVCaptureVideoDataOutput()
 
@@ -51,9 +52,6 @@ class ViewController: UIViewController {
       self.cameraSession.addInput(input)
       self.cameraSession.addOutput(output)
       self.cameraSession.commitConfiguration()
-
-      // Change orientation so all images are properly oriented for portrait orientation.
-      output.connection(with: .video)?.videoOrientation = .portrait
     }
   }
 
@@ -69,16 +67,23 @@ class ViewController: UIViewController {
 extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-    let image = FritzVisionImage(buffer: sampleBuffer)
+    let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
 
-    guard let mask = try? visionModel.predict(image),
-      let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
+    guard let result = try? visionModel.predict(image),
+      let rotatedImage = image.rotate()
       else { return }
-    
+
+    let background = UIImage(pixelBuffer: rotatedImage)
+
+    let mask = result.buildSingleClassMask(
+      forClass: FritzVisionPeopleClass.person,
+      clippingScoresAbove: 0.7,
+      zeroingScoresBelow: 0.25
+    )
+
     DispatchQueue.main.async {
-      let background = UIImage(pixelBuffer: imageBuffer)
       self.cameraView.image = background
-      self.maskView.image = mask.toImageMask(of: FritzVisionPeopleClass.person, threshold: 0.7, minThresholdAccepted: 0.25)
+      self.maskView.image = mask
       self.backgroundView.image = background
     }
   }

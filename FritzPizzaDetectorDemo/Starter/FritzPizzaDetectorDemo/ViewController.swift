@@ -20,7 +20,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     // Setup camera
-    guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
+    guard let device = AVCaptureDevice.default(
+      .builtInWideAngleCamera, for: .video, position: .back),
       let input = try? AVCaptureDeviceInput(device: device)
       else { return }
 
@@ -36,10 +37,7 @@ class ViewController: UIViewController {
       self.cameraSession.addInput(input)
       self.cameraSession.addOutput(output)
       self.cameraSession.commitConfiguration()
-      self.cameraSession.sessionPreset = .vga640x480
-
-      // Change orientation so all images are properly oriented for portrait orientation.
-      output.connection(with: .video)?.videoOrientation = .portrait
+      self.cameraSession.sessionPreset = .photo
     }
 
   }
