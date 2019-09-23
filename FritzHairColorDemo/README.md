@@ -21,17 +21,15 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 ## Getting Started
 
+**Step 1: Create a Fritz Account**
+
 [Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
 
-**Step 1: Clone / Fork the fritz-ios-tutorials repository and open FritzHairColorDemo**
+**Step 2: Clone / Fork the fritz-ios-tutorials repository and open FritzHairColorDemo**
 
 ```
 git clone https://github.com/fritzlabs/fritz-ios-tutorials.git
 ```
-
-**Step 2: Create a Fritz Account**
-
-In order to use Fritz, please [register for a free account](https://app.fritz.ai/register) and [follow the directions](https://docs.fritz.ai/develop/get-started-sdk.html) for setting up a new app.
 
 **Step 3: Setup the project via Cocoapods**
 
