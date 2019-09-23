@@ -55,10 +55,6 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 - [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU)
 - [Help Center](https://docs.fritz.ai/help-center/index.html)
 
-## Setup a Fritz account
-
-[iOS SDK instructions](https://docs.fritz.ai/develop/get-started-sdk.html)
-
 ## Documentation
 
 [Fritz Docs Home](https://docs.fritz.ai/)
