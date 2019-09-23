@@ -19,7 +19,7 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 ## Getting Started
 
-**Step 1: Create a Fritz Account**
+**Step 1: Create a Fritz AI Account**
 
 [Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
 
