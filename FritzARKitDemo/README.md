@@ -4,6 +4,10 @@
 
 In this app, we use [Object Detection API by Fritz](https://www.fritz.ai/features/object-detection.html) and [Pose Estimation API by Fritz](https://www.fritz.ai/features/pose-estimation.html) in order to build different ARKit experiences.
 
+## Fritz AI
+
+Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
+
 ## Requirements
 
 - Xcode 10.2 or later.
@@ -12,6 +16,8 @@ In this app, we use [Object Detection API by Fritz](https://www.fritz.ai/feature
 - CocoaPods 1.6.0 or later.
 
 ## Getting Started
+
+[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
 
 **Step 1: Clone / Fork the fritz-ios-tutorials repository and open FritzStyleTransferDemo**
 
@@ -57,3 +63,15 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 [Fritz Docs Home](https://docs.fritz.ai/)
 
 [iOS SDK Reference Docs](https://docs.fritz.ai/iOS/latest/index.html)
+
+## Join the community
+
+[Heartbeat](https://heartbeat.fritz.ai/?utm_source=github&utm_campaign=fritz-models) is a community of developers interested in the intersection of mobile and machine learning. [Chat with us in Slack](https://join.slack.com/t/heartbeat-by-fritz/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU) and stay up to date on the latest mobile ML news with our [Newsletter](https://mobileml.us16.list-manage.com/subscribe?u=de53bead690affb8e9a21de8f&id=68acb5c0fd).
+
+## Help
+
+For any questions or issues, you can:
+- Submit an issue on this repo
+- Go to our [Help Center](https://docs.fritz.ai/help-center/index.html)
+- Message us directly in [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtNTY5NDM2MTQwMTgwLTAyODE3MmQzZjU2NWE5MDNmYTgwM2E1MjU5Y2Y2NmI2YTlkMTMwZTAwYTAwMzQ5NzQ2NDBhZjhmYjU2YWY3OGU)
+
