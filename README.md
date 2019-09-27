@@ -1,5 +1,7 @@
 # Fritz iOS Tutorials 
 
+**DEPRECATED** Please note that as of 9/28/2019, we have consolidated our demo apps in https://github.com/fritzlabs/fritz-examples. Any new examples or updates going forward will be in that repository.
+
 Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
 [Sign up](https://app.fritz.ai/register?utm_source=github&utm_campaign=fritz-ios-tutorials) for an account on Fritz AI in order to get started with machine learning in your apps.
