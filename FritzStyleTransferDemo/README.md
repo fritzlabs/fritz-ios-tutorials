@@ -2,9 +2,9 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-In this app, we use the [Style Transfer API by Fritz](https://www.fritz.ai/features/style-transfer.html) in order to build different camera filters inspired by some of the greatest artists like Van Gogh and Picasso.
+In this app, we use the [Style Transfer API by Fritz](https://www.fritz.ai/features/style-transfer.html?utm_source=github&utm_campaign=fritz-ios-tutorials) in order to build different camera filters inspired by some of the greatest artists like Van Gogh and Picasso.
 
-For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/real-time-style-transfer-for-ios-transform-your-photos-and-videos-into-masterpieces-f04111fcd2ff).
+For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/real-time-style-transfer-for-ios-transform-your-photos-and-videos-into-masterpieces-f04111fcd2ff?utm_source=github&utm_campaign=fritz-ios-tutorials).
 
 <img src="images/style_transfer_ios.jpg" width="250" />
 
@@ -23,7 +23,7 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 **Step 1: Create a Fritz AI Account**
 
-[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
+[Sign up](https://app.fritz.ai/register?utm_source=github&utm_campaign=fritz-ios-tutorials) for an account on Fritz AI in order to get started.
 
 **Step 2: Clone / Fork the fritz-ios-tutorials repository and open FritzStyleTransferDemo**
 
@@ -52,23 +52,23 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 
 ## For questions on how to use the demos, contact us:
 
-- [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU)
-- [Help Center](https://docs.fritz.ai/help-center/index.html)
+- [Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials)
+- [Help Center](https://docs.fritz.ai/help-center/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
 
 ## Documentation
 
-[Fritz Docs Home](https://docs.fritz.ai/)
+[Fritz Docs Home](https://docs.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials)
 
-[iOS SDK Reference Docs](https://docs.fritz.ai/iOS/latest/index.html)
+[iOS SDK Reference Docs](https://docs.fritz.ai/iOS/latest/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
 
 ## Join the community
 
-[Heartbeat](https://heartbeat.fritz.ai/?utm_source=github&utm_campaign=fritz-models) is a community of developers interested in the intersection of mobile and machine learning. [Chat with us in Slack](https://join.slack.com/t/heartbeat-by-fritz/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU) and stay up to date on the latest mobile ML news with our [Newsletter](https://mobileml.us16.list-manage.com/subscribe?u=de53bead690affb8e9a21de8f&id=68acb5c0fd).
+[Heartbeat](https://heartbeat.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials) is a community of developers interested in the intersection of mobile and machine learning. [Chat with us in Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials) and stay up to date on the latest mobile ML news with our [Newsletter](https://mobileml.us16.list-manage.com/subscribe?u=de53bead690affb8e9a21de8f&id=68acb5c0fd).
 
 ## Help
 
 For any questions or issues, you can:
-- Submit an issue on this repo
-- Go to our [Help Center](https://docs.fritz.ai/help-center/index.html)
-- Message us directly in [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtNTY5NDM2MTQwMTgwLTAyODE3MmQzZjU2NWE5MDNmYTgwM2E1MjU5Y2Y2NmI2YTlkMTMwZTAwYTAwMzQ5NzQ2NDBhZjhmYjU2YWY3OGU)
 
+- Submit an issue on this repo
+- Go to our [Help Center](https://docs.fritz.ai/help-center/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
+- Message us directly in [Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials)
