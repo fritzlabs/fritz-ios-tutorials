@@ -41,8 +41,13 @@ If you are new to Fritz, I'd recommend getting started with our Heartbeat App. Y
 
 [iOS API Docs](https://docs.fritz.ai/iOS/latest/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
 
-## Join the community
-[Heartbeat](https://heartbeat.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials) is a community of developers interested in the intersection of mobile and machine learning. [Chat with us in Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials) and stay up to date on the latest mobile ML news with our [Newsletter](https://mobileml.us16.list-manage.com/subscribe?u=de53bead690affb8e9a21de8f&id=68acb5c0fd).
+## Stay in touch with Fritz AI
+
+To keep tabs on what we’re up to, and for an inside look at the opportunities, challenges, and tools for mobile machine learning, subscribe to the [Fritz AI Newsletter](https://www.fritz.ai/newsletter?utm_campaign=ios-tutorials&utm_source=github).
+
+## Join the Community
+
+[Heartbeat](https://heartbeat.fritz.ai/?utm_campaign=ios-tutorials&utm_source=github) is a community of developers interested in the intersection of mobile and machine learning. Chat with us in [Slack](https://www.fritz.ai/slack?utm_campaign=ios-tutorials&utm_source=github), and stay up-to-date on industry news, trends, and more by subscribing to [Deep Learning Weekly](https://www.deeplearningweekly.com/?utm_campaign=ios-tutorials&utm_source=github).
 
 ## Help
 For any questions or issues, you can:
