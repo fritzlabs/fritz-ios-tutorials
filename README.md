@@ -1,4 +1,4 @@
-# Fritz iOS Tutorials 
+# Fritz iOS Tutorials
 
 **DEPRECATED** Please note that as of 9/28/2019, we have consolidated our demo apps in https://github.com/fritzlabs/fritz-examples. Any new examples or updates going forward will be in that repository.
 
@@ -52,6 +52,6 @@ To keep tabs on what we’re up to, and for an inside look at the opportunities,
 ## Help
 For any questions or issues, you can:
 - Submit an issue on this repo
-- Go to our [Help Center](https://docs.fritz.ai/help-center/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
+- Go to [Support](https://support.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials)
 - Message us directly in [Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials)
 

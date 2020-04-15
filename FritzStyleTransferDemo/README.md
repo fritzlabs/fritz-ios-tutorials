@@ -53,7 +53,7 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 ## For questions on how to use the demos, contact us:
 
 - [Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials)
-- [Help Center](https://docs.fritz.ai/help-center/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
+- [Support](https://support.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials)
 
 ## Documentation
 
@@ -70,5 +70,5 @@ Attach a device or use an emulator to run the app. If you get the error "Please 
 For any questions or issues, you can:
 
 - Submit an issue on this repo
-- Go to our [Help Center](https://docs.fritz.ai/help-center/index.html?utm_source=github&utm_campaign=fritz-ios-tutorials)
+- Go to [Support](https://support.fritz.ai/?utm_source=github&utm_campaign=fritz-ios-tutorials)
 - Message us directly in [Slack](https://fritz.ai/slack?utm_source=github&utm_campaign=fritz-ios-tutorials)
